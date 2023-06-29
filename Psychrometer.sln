@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychroWPF", "PsychroWPF\PsychroWPF.csproj", "{10E0F6B4-75A7-48DA-AA8F-E980BF4F6FEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PsychroConsole", "PsychroConsole\PsychroConsole.csproj", "{786A0FEB-4259-44B6-A2FE-E41D4219DED8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10E0F6B4-75A7-48DA-AA8F-E980BF4F6FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E0F6B4-75A7-48DA-AA8F-E980BF4F6FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E0F6B4-75A7-48DA-AA8F-E980BF4F6FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E0F6B4-75A7-48DA-AA8F-E980BF4F6FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786A0FEB-4259-44B6-A2FE-E41D4219DED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786A0FEB-4259-44B6-A2FE-E41D4219DED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786A0FEB-4259-44B6-A2FE-E41D4219DED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786A0FEB-4259-44B6-A2FE-E41D4219DED8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC91D7BB-333A-419F-876F-B4C6F66674CF}
+	EndGlobalSection
+EndGlobal
