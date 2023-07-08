@@ -1,0 +1,36 @@
+﻿@model PsychroASP.Models.Readings;
+@{
+    ViewData["Title"] = "Психрометричний калькулятор";
+}
+
+
+<h2 class="text-center"> Вимірювання вологості повітря психрометричним методом </h2>
+<form asp-action="Calculate" method="post">
+    <div class="form-group">
+        <label>Покази сухого термометра в &#176C:</label>
+        <input asp-for="TempDry" type="number" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Покази вологого термометра в &#176C:</label>
+        <input asp-for="TempWet" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Атмосферний тиск в мм.рт.ст:</label>
+        <input asp-for="Pressure" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label id="windSpeedLabel">Швидкiсть вiтру ( штиль = 0.13, сильний вітер або психрометр Ассмана = 5): 0.13 м/c </label>
+        <input asp-for="SpeedWind" type="range"  style="width:100%" id="speedSlider" min="0.13" max="5" step="0.01" value="0.13" onchange="updateLabel()" />
+        <script>
+            function updateLabel() {
+                var slider = document.getElementById("speedSlider");
+                var label = document.getElementById("windSpeedLabel");
+
+                label.innerHTML = "Швидкiсть вiтру ( штиль = 0.13, сильний вітер або психрометр Ассмана = 5): " + slider.value + " м/с";
+            }
+        </script>
+    </div>
+    <div class="text-center" >
+        <input class="btn btn-primary" type="submit" value="Розрахувати" />
+    </div>
+</form>

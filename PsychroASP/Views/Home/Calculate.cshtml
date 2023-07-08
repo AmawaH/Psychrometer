@@ -1,0 +1,10 @@
+﻿@model PsychroASP.Models.Readings;
+@{
+    ViewData["Title"] = "Результати розрахунків";
+}
+
+<div>Покази сухого термометра = @Model.TempDry &#176C</div>
+<div>Покази вологого термометра = @Model.TempWet &#176C:</div>
+<div>Атмосферний тиск = @Model.Pressure мм.рт.ст</div>
+<div>Швидкість вітру = @Model.SpeedWind м/с </div>
+<div>Розрахункова відносна вологість повітря за вказаними данними = <b>@Model.Humidity.ToString("F2")%</b></div>
